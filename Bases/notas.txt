@@ -1,6 +1,6 @@
 Notas de Ruby
 
-$ irb -> correr este comando permite manejar ruby interactivamente.CO
+$ irb -> correr este comando permite manejar ruby interactivamente
     - para salir del control interactivo -> shift + d
 
 - Ejecutar archivos ruby

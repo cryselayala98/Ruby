@@ -1,0 +1,52 @@
+Notas de Ruby
+
+$ irb -> correr este comando permite manejar ruby interactivamente.CO
+    - para salir del control interactivo -> shift + d
+
+- Ejecutar archivos ruby
+  $ ruby ex1.rb
+
+-----------------------------------------------------------------------------------------------
+instalar herramientas necesarias para crear proyectos
+
+- actualizar rubygems (si ya está instalado)
+
+gem install rubygems-update
+update_rubygems
+gem update --system
+
+- instalar otras herramientas
+    • git - http://git-scm.com/
+    • rake - http://rake.rubyforge.org/
+    • rvm - https://rvm.beginrescueend.com/
+    • rubygems - http://rubygems.org/pages/download
+    • bundler - http://gembundler.com/
+
+- también instalar rbenv
+
+Rails
+
+- para crear un proyecto/repositorio:
+ $ rails new nombre_folder
+
+- para generar recursos (archivos necesarios, ej controller, views, helpers, models) de alguna entidad (en este caso crearé una entidad producto):
+ $ rails generate resource product name:string description:text price:integer
+
+- para migrar la db (antes de realizar operaciones sobre ella)
+ $ rails db:migrate
+
+- para entrar a la consola de rails (similar a irb en ruby) 
+ $ rails c
+
+- para crear registros en la consola de rails (en este caso crear registros en sqlite)
+ > p2= Product.create(name:"yuca", description:"yuca normal", text:"texto de la yuca", price:100)
+- para acceder a todos los elementos de una tabla de la bd
+ > Product.all
+
+
+- para ejecutar el proyecto
+ $ rails server
+
+- para revisar las rutas del proyecto
+ $ rails routes
+ 

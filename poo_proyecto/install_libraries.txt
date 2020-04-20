@@ -1,0 +1,1 @@
+bcrypt -> https://www.rubydoc.info/github/codahale/bcrypt-ruby

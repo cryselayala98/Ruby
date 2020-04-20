@@ -7,6 +7,15 @@ cities = {'CA' => 'San Francisco',
     # agregar elementos 
     cities['NY'] = 'New York'
     cities['OR'] = 'Portland'
+
+    # acceder a los valores por medio de sus claves
+    puts cities['NY']
+
+    # eliminar elementos por medio de las claves
+    cities.delete('CA')
+
+    # mostrar las claves y los valores
+    puts cities.keys, cities.values
     
     def find_city(map, state)
         if map.include? state # verificar de existencia de un valor para la clave especificada
@@ -54,9 +63,9 @@ books[:black] = "The Well-Grounded Rubyist"
 # limpiar un diccionario
 books.clear 
 
-# iterar sobre diccionarios
 restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 }
 
+# iterar sobre diccionarios
 restaurant_menu.each do | item, price |
   puts "#{item}: $#{price}"
 end
@@ -68,3 +77,7 @@ h.each {|key, value| puts "#{key} is #{value}" }
 
 
 puts h.empty? # verificar diccionarios nulos
+
+# otra alternativa para crear diccionarios 
+my_hash = {a:1, b:2, c:3, d:4} # claves como símbolos
+puts my_hash[:c]

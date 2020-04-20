@@ -28,3 +28,6 @@ puts w + e
 puts "hola " + " mundo \ncrisel"
 puts "hola " + " mundo","crisel"
 puts #también se puede hacer esto para imprimir saltos de línea
+
+# usar los caracteres de escape para ignorar las variables
+puts " Hola \#{binary}"

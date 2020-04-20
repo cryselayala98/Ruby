@@ -79,6 +79,9 @@ arr.empty? #=> verificar si el array tiene elementos
 
 arr.include?('Konqueror') #=> verificar la existencia de elementos
 
+arr14 = arr.reverse # invertir el orden de los valores en otra variable
+arr.reverse! # invertir el orden de los valores en el mismo array, en sí mismo
+
 # insertar elementos
 arr = [1, 2, 3, 4]
 arr.push(5) #=> [1, 2, 3, 4, 5]
@@ -101,5 +104,19 @@ arr #=> [2, 3, 4, 5]
 
 #eliminar todaslas existencias de un número determinado
 arr = [1, 2, 2, 3]
-arr.delete(2) #=> 2
+arr.delete(2) #=> elimina todas las instancias de 2
 arr #=> [1,3]
+
+print "hola #{arr.shuffle}" # shuffle -> revuelve los elementos del array de forma random
+
+arr<<25 # otra forma de agregar elementos 
+puts arr 
+
+arr2 = arr.uniq # elimina los elementos duplicados
+arr.uniq! # elimina los elementos duplicados en sí mismo
+
+numbers = (0..25).to_a # crea un array con los numeros del 0 al 25
+puts numbers
+
+numbers = (0..9).to_a.shuffle! # crea un array con elementos del 0 al 9 ordenados aleatoriamente
+puts numbers

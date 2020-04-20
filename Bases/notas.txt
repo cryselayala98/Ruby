@@ -1,7 +1,7 @@
 Notas de Ruby
 
 $ irb -> correr este comando permite manejar ruby interactivamente
-    - para salir del control interactivo -> shift + d
+    - para salir del control interactivo -> shift + d   or    exit
 
 - Ejecutar archivos ruby
   $ ruby ex1.rb

@@ -1,0 +1,19 @@
+University
+------------------------
+ Student
+ -- Students - first name, last name, email, student id
+
+ Course
+ -- Courses - course name,course description, course id
+
+
+Bookstore
+------------------------
+ Book
+ -- Books - ISBN, name, description
+
+ Employee
+ -- Employees - SSN, first name, last name, email, employee id
+
+News Network/Blog Site
+------------------------

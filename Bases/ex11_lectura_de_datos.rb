@@ -23,3 +23,11 @@ puts "So, you're #{age} old, #{height} tall and #{weight} heavy."
 suma = age + height
 puts "sumar #{suma}" # print "sumar 12121"
 
+
+# lectura de datos infinita
+loop do
+    puts "presione Y para salir, N para seguir"
+    t = gets.chomp
+    break if(t.downcase == 'y')
+end
+

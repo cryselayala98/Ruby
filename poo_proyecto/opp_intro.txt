@@ -14,6 +14,3 @@ Bookstore
 
  Employee
  -- Employees - SSN, first name, last name, email, employee id
-
-News Network/Blog Site
-------------------------

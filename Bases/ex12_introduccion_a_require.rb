@@ -12,6 +12,12 @@ puts f.last_modified # Thu Dec 05 02:45:02 UTC 2002
 
 end
 
+# require_relative 'crud'
+
+# $LOAD_PATH << "."
+# require 'crud'
+
+
 
 # lo importante en este ejercicio es entender que en ciertos momentos se necesitarán importar librerías para hacer uso de operaciones más específicas de esas librerías.
 

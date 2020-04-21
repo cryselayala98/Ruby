@@ -1,4 +1,9 @@
+# require '../librerias/bcrypt/crypt'
+require_relative 'crypt'
+
 class Student
+
+    include Crypt # incluye los métodos del módulo Crypt
 
     # insertar getters y setters automaticamente
     attr_accessor :first_name, :last_name, :email, :username, :password
@@ -20,7 +25,7 @@ class Student
         @last_name = last_name
         @email = email
         @username = username
-        @password = password
+        @password = create_hash_password(password)
     end
 
 
@@ -44,18 +49,23 @@ class Student
         "Last name: #{@last_name} \n" +
         "Nombre de usuario: #{@username} \n" +
         "Correo: #{@email} \n" + 
-        "Contraseña: #{@password}"
+        "Contraseña: #{@password}\n"
     end
 end
 
-Jazmin = Student.new("", "", "", "", "")
+# Jazmin = Student.new("", "", "", "", "")
 
 # Jazmin.first_name("Crisel Jazmin")
-Jazmin.first_name = "Crisel Jazmin" 
-Jazmin.set_username
-puts Jazmin # imprime el método to_s por defecto
-puts Jazmin.first_name
+# Jazmin.first_name = "Crisel Jazmin" 
+# Jazmin.set_username
+# puts Jazmin # imprime el método to_s por defecto
+# puts Jazmin.first_name
 
-Abel = Student.new("Abel", "Ayala", "unamoscaentupared@gmail.com", "tito2005",  
-                   "12345")
-puts Abel
+# Abel = Student.new("Abel", "Ayala", "unamoscaentupared@gmail.com", "tito2005", "12345")
+# puts Abel
+
+# hashed_password = Abel.create_hash_password("12345") # puede utilizar los métodos del módulo Crypt porq ue están incluídos en la clase estudiante
+# puts hashed_password
+
+
+

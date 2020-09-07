@@ -31,3 +31,12 @@ loop do
     break if(t.downcase == 'y')
 end
 
+# Lo anterior, usando buenas practicas 
+until line==null do
+    line =  gets
+    if op(line)
+        puts "correct"
+    else
+        puts "incorrect" 
+    end       
+end
